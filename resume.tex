@@ -1,0 +1,145 @@
+\documentclass[letterpaper,10pt]{article}
+
+% for custom \section
+\usepackage{titlesec}
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+
+%Setup hyperref package, and colours for links
+\RequirePackage{color,graphicx}
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+% Use the whole page
+\usepackage{fullpage}
+
+% no line numbers
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{center}
+    {\Large David Zmick}
+
+    +1 832 239 7385
+
+    \href{mailto:dpzmick@gmail.com}{dpzmick@gmail.com}
+
+    \href{http://dpzmick.com}{dpzmick.com}
+
+    % \begin{tabular}{rl}
+    %     \textsc{phone:}     & +1 832 239 7385\\
+    %     \textsc{email:}     & \href{mailto:dpzmick@gmail.com}{dpzmick@gmail.com}\\
+    %     \textsc{web:}       & \href{http://dpzmick.com}{dpzmick.com}
+    % \end{tabular}
+
+\end{center}
+
+\section{Objective}
+Here I talk about what I want. Whatever that is.\\
+
+\section{Education}
+\begin{tabular}{rl}
+	\textsc{Present}    & B.S. in Computer Science, Minor in Mathematics, Expected Graduation: April 2016\\
+                        & University of Illinois at Urbana-Champaign\\
+                        & Current GPA: 3.72\\
+    \\\multicolumn{1}{c}{}\\
+\end{tabular}
+
+\section{Work Experience}
+\begin{tabular}{rp{11cm}}
+    \textsc{Present}
+    & \emph{Anheuser Busch Research Lab --- Twitter Analysis}\\
+    & How can we use Twitter data to market more effectively?
+    \\\multicolumn{1}{c}{}\\
+
+    \textsc{Present}
+    & \emph{CS 241 --- Systems Programming Undergraduate Course Assistant}\\
+    & Assisting students in the class and helping to write assignments, documentation, and test questions.
+    \\\multicolumn{1}{c}{}\\
+
+    \textsc{Summer 2014}
+    & \emph{BP High Performance Computing Development Team Intern}\\
+    & Worked to understand seismic processing workflows and the effects data storage and transfer has on performance of those work flows. Used this information to prototype an HDF5 container for seismic that could improve I/O performance, simplify our data processing codes, and simplify workflows
+    \\\multicolumn{1}{c}{}\\
+
+    \textsc{Summer 2013}
+    & \emph{BP High Performance Computing Systems Administration Intern}\\
+    & Performed systems administration tasks for \~5500 node Linux cluster\\
+    & Initial planning for website technology migration project
+    \\\multicolumn{1}{c}{}\\
+
+    \textsc{Aug. 2012 --- Apr. 2013}
+    & \emph{NCSA SPIN Program --- Twitter Data Analytics}\\
+    & Collected and visualized Twitter data to learn more about the Twitter network to attempt to make better predictions
+    \\\multicolumn{1}{c}{}\\
+\end{tabular}
+
+\section{Selected Personal Projects}
+\begin{tabular}{rp{11cm}}
+    \textsc{WhichOne}
+    & Decision matrix tool (\href{http://dpzmick.com/whichone}{dpzmick.com/whichone})\\
+    & Used to evaluate a variety a set of options subject to a set of objectives\\
+    & Technology Used: jQuery, underscore.js
+    \\\multicolumn{2}{c}{}\\
+
+    \textsc{Study Group Simulator}
+    & Agent-Based simulation of students forming study groups\\
+    & Attempted to answer the question: Why are study groups always too large and what can we do about it?\\
+    & Technology Used: Haskell, Python, R
+    \\\multicolumn{2}{c}{}\\
+
+    \textsc{Ice Bucket Challenge Tracker}
+    & Tracked the ALS Ice Bucket challenge on Instagram to build a graph of connections between participating individuals.\\
+    & Technology Used: Python, Gephi, graphviz\\
+\end{tabular}
+
+\section{Technology Experience}
+\subsection{Libraries}
+\begin{itemize}
+    \item HDF5 and High Performance I/O
+    \item MPI, OpenMP, OpenACC
+    \item CUDA (Brief Exposure)
+    \item Matplotlib
+    \item MongoDB
+    \item Linux
+    \item LAMP Stack (Moderate familiarity)
+    \item logstash
+    \item elasticsearch
+    \item Hadoop (Brief exposure)
+\end{itemize}
+
+\subsection{Languages}
+\begin{itemize}
+    \item C/C++
+    \item Python and Ruby
+    \item Haskell
+    \item Fortran (brief exposure)
+\end{itemize}
+
+\pagebreak
+
+\section{Relevant Courses}
+\begin{itemize}
+    \item Data Structures
+    \item Computer Architecture I
+    \item Discrete Structures
+    \item Theory of Computation
+    \item Systems Programming
+    \item Calculus I, II, III
+    \item Applied Linear Algebra
+    \item Differential Equations
+    \item Operations Research
+\end{itemize}
+
+\section{Courses in Progress}
+\begin{itemize}
+    \item Algorithms
+    \item Artificial Intelligence
+    \item Numerical Analysis
+    \item Dynamics and Differential Equations
+    \item Decision Analysis
+\end{itemize}
+
+\end{document}
