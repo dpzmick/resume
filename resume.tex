@@ -12,10 +12,23 @@
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 
 % Use the whole page
-\usepackage{fullpage}
+\usepackage[top=0.5in,bottom=0.5in,right=1in,left=1in]{geometry}
 
-% no line numbers
+% no page numbers
 \pagestyle{empty}
+
+% table widths
+\newcommand{\tbl}{2.5cm}
+\newcommand{\tbr}{13cm}
+
+% allows tables contents to be aligned right
+\usepackage{array}
+%\newcolumntype{x}[1]{>{\centering\hspace{0pt}}p{#1}}
+\newcolumntype{x}[1]{>{\raggedleft\hspace{0pt}\arraybackslash}p{#1}}
+
+% don't indent paragraphs
+\setlength{\parindent}{0pt}
+
 
 \begin{document}
 
@@ -28,118 +41,147 @@
 
     \href{http://dpzmick.com}{dpzmick.com}
 
-    % \begin{tabular}{rl}
-    %     \textsc{phone:}     & +1 832 239 7385\\
-    %     \textsc{email:}     & \href{mailto:dpzmick@gmail.com}{dpzmick@gmail.com}\\
-    %     \textsc{web:}       & \href{http://dpzmick.com}{dpzmick.com}
-    % \end{tabular}
-
 \end{center}
+Areas of interest: Scientific Computing (Engineering Simulations and physical
+modeling), Systems Programming, Programming languages and compilers, social data
+mining, mathematical analysis, statistical learning, dynamical systems.\\
 
-\section{Objective}
-Here I talk about what I want. Whatever that is.\\
+Technical strength include: C and Python programming, high performance programming
+(specifically I/O), Linux systems programming.\\
 
 \section{Education}
-\begin{tabular}{rl}
-	\textsc{Present}    & B.S. in Computer Science, Minor in Mathematics, Expected Graduation: April 2016\\
+\begin{tabular}{x{\tbl}p{\tbr}}
+	\textsc{Present}    & B.S. in Computer Science, Minor in Mathematics, Expected Graduation: May 2016\\
                         & University of Illinois at Urbana-Champaign\\
                         & Current GPA: 3.72\\
-    \\\multicolumn{1}{c}{}\\
+    \\
+\end{tabular}
+
+\section{Relevant Courses}
+\begin{tabular}{x{\tbl}p{\tbr}}
+    \textsc{Mathematics}
+    & Calculus I, II, II, Applied Linear Algebra, Statistics I, Differential
+    Equations I, II \newline \\
+
+    \textsc{Computer Science}
+    & Data Structures, Computer Architecture I, Discrete Math, Theory of
+    Computation, Algorithms, Artificial Intelligence, Numerical Analysis \newline \\
+
+    \textsc{Other}
+    & Decision Analysis I, Operations Research
+
 \end{tabular}
 
 \section{Work Experience}
-\begin{tabular}{rp{11cm}}
+\begin{tabular}{x{\tbl}p{\tbr}}
     \textsc{Present}
-    & \emph{Anheuser Busch Research Lab --- Twitter Analysis}\\
-    & How can we use Twitter data to market more effectively?
-    \\\multicolumn{1}{c}{}\\
+    & \emph{Anheuser Busch Research Lab --- Twitter Analysis} \newline
+    Analyze social network data to assess the effectiveness of marketing
+    campaigns. \newline \\
 
     \textsc{Present}
-    & \emph{CS 241 --- Systems Programming Undergraduate Course Assistant}\\
-    & Assisting students in the class and helping to write assignments, documentation, and test questions.
-    \\\multicolumn{1}{c}{}\\
+    & \emph{CS 241 --- Systems Programming Undergraduate Course Assistant} \newline
+    Assisting students in the class and helping to write assignments,
+    documentation, and test questions. \newline \\
 
     \textsc{Summer 2014}
-    & \emph{BP High Performance Computing Development Team Intern}\\
-    & Worked to understand seismic processing workflows and the effects data storage and transfer has on performance of those work flows. Used this information to prototype an HDF5 container for seismic that could improve I/O performance, simplify our data processing codes, and simplify workflows
-    \\\multicolumn{1}{c}{}\\
+    & \emph{BP High Performance Computing Development Team Intern} \newline
+    Worked to understand seismic processing workflows and the effects data
+    storage and transfer has on performance of those work flows. Used this
+    information to prototype an HDF5 container for seismic that could improve
+    I/O performance, simplify our data processing codes, and simplify workflows \newline \\
 
     \textsc{Summer 2013}
-    & \emph{BP High Performance Computing Systems Administration Intern}\\
-    & Performed systems administration tasks for \~5500 node Linux cluster\\
-    & Initial planning for website technology migration project
-    \\\multicolumn{1}{c}{}\\
+    & \emph{BP High Performance Computing Systems Administration Intern} \newline
+    Performed systems administration tasks for \~5500 node Linux cluster \newline
+    Initial planning for website technology migration project \newline \\
 
-    \textsc{Aug. 2012 --- Apr. 2013}
-    & \emph{NCSA SPIN Program --- Twitter Data Analytics}\\
-    & Collected and visualized Twitter data to learn more about the Twitter network to attempt to make better predictions
-    \\\multicolumn{1}{c}{}\\
+    \textsc{August 2012 April 2013}
+    & \emph{NCSA SPIN Program --- Twitter Data Analytics} \newline
+    Created visualizations to explore the properties of different types of
+    Twitter accounts and understand how different types of information move
+    through the Twitter network. \newline \\
+
 \end{tabular}
 
-\section{Selected Personal Projects}
-\begin{tabular}{rp{11cm}}
-    \textsc{WhichOne}
-    & Decision matrix tool (\href{http://dpzmick.com/whichone}{dpzmick.com/whichone})\\
-    & Used to evaluate a variety a set of options subject to a set of objectives\\
-    & Technology Used: jQuery, underscore.js
-    \\\multicolumn{2}{c}{}\\
+\section{Extracurricular Activities}
+\begin{tabular}{x{\tbl}p{\tbr}}
+    \textsc{SigEducation}
+    & Chair of the local ACM chapter's special interest group for educational software \newline
+    Projects have included extensions to Khan Academy and development for an
+    existing flash card application \newline \\
 
-    \textsc{Study Group Simulator}
-    & Agent-Based simulation of students forming study groups\\
-    & Attempted to answer the question: Why are study groups always too large and what can we do about it?\\
-    & Technology Used: Haskell, Python, R
-    \\\multicolumn{2}{c}{}\\
+    \textsc{Youth Ministry Assistant}
+    & Volunteered as an adult assistant for church's youth group during the summers. \newline
+    Taught a bible study for the youth boys discussing Christian values and their applications to modern society \newline \\
 
-    \textsc{Ice Bucket Challenge Tracker}
-    & Tracked the ALS Ice Bucket challenge on Instagram to build a graph of connections between participating individuals.\\
-    & Technology Used: Python, Gephi, graphviz\\
 \end{tabular}
 
-\section{Technology Experience}
-\subsection{Libraries}
-\begin{itemize}
-    \item HDF5 and High Performance I/O
-    \item MPI, OpenMP, OpenACC
-    \item CUDA (Brief Exposure)
-    \item Matplotlib
-    \item MongoDB
-    \item Linux
-    \item LAMP Stack (Moderate familiarity)
-    \item logstash
-    \item elasticsearch
-    \item Hadoop (Brief exposure)
-\end{itemize}
 
-\subsection{Languages}
-\begin{itemize}
-    \item C/C++
-    \item Python and Ruby
-    \item Haskell
-    \item Fortran (brief exposure)
-\end{itemize}
+% \section{Selected Personal Projects}
+% \begin{tabular}{rp{11cm}}
+%     \textsc{WhichOne}
+%     & Decision matrix tool (\href{http://dpzmick.com/whichone}{dpzmick.com/whichone})\\
+%     & Used to evaluate a variety a set of options subject to a set of objectives\\
+%     & Technology Used: jQuery, underscore.js\\
+%     \\
 
-\pagebreak
+%     \textsc{Study Group Simulator}
+%     & Agent-Based simulation of students forming study groups\\
+%     & Attempted to answer the question: Why are study groups always too large and what can we do about it?\\
+%     & Technology Used: Haskell, Python, R\\
+%     \\
 
-\section{Relevant Courses}
-\begin{itemize}
-    \item Data Structures
-    \item Computer Architecture I
-    \item Discrete Structures
-    \item Theory of Computation
-    \item Systems Programming
-    \item Calculus I, II, III
-    \item Applied Linear Algebra
-    \item Differential Equations
-    \item Operations Research
-\end{itemize}
+%     \textsc{Ice Bucket Challenge Tracker}
+%     & Tracked the ALS Ice Bucket challenge on Instagram to build a graph of connections between participating individuals.\\
+%     & Technology Used: Python, Gephi, graphviz\\
+% \end{tabular}
 
-\section{Courses in Progress}
-\begin{itemize}
-    \item Algorithms
-    \item Artificial Intelligence
-    \item Numerical Analysis
-    \item Dynamics and Differential Equations
-    \item Decision Analysis
-\end{itemize}
+% \section{Technology Experience}
+% \subsection{Libraries}
+% \begin{itemize}
+%     \item HDF5 and High Performance I/O
+%     \item MPI, OpenMP, OpenACC
+%     \item CUDA (Brief Exposure)
+%     \item Matplotlib
+%     \item MongoDB
+%     \item Linux
+%     \item LAMP Stack (Moderate familiarity)
+%     \item logstash
+%     \item elasticsearch
+%     \item Hadoop (Brief exposure)
+% \end{itemize}
+
+% \subsection{Languages}
+% \begin{itemize}
+%     \item C/C++
+%     \item Python and Ruby
+%     \item Haskell
+%     \item Fortran (brief exposure)
+% \end{itemize}
+
+% \pagebreak
+
+% \section{Relevant Courses}
+% \begin{itemize}
+%     \item Data Structures
+%     \item Computer Architecture I
+%     \item Discrete Structures
+%     \item Theory of Computation
+%     \item Systems Programming
+%     \item Calculus I, II, III
+%     \item Applied Linear Algebra
+%     \item Differential Equations
+%     \item Operations Research
+% \end{itemize}
+
+% \section{Courses in Progress}
+% \begin{itemize}
+%     \item Algorithms
+%     \item Artificial Intelligence
+%     \item Numerical Analysis
+%     \item Dynamics and Differential Equations
+%     \item Decision Analysis
+% \end{itemize}
 
 \end{document}
