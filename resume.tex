@@ -2,7 +2,7 @@
 
 % for custom \section
 \usepackage{titlesec}
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{3pt}{3pt}
 
 %Setup hyperref package, and colours for links
@@ -12,14 +12,14 @@
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 
 % Use the whole page
-\usepackage[top=0.5in,bottom=0.5in,right=1in,left=1in]{geometry}
+\usepackage[top=1in,bottom=1in,right=1in,left=1in]{geometry}
 
 % no page numbers
 \pagestyle{empty}
 
 % table widths
-\newcommand{\tbl}{2.5cm}
-\newcommand{\tbr}{13cm}
+\newcommand{\tbl}{3cm}
+\newcommand{\tbr}{12.5cm}
 
 % allows tables contents to be aligned right
 \usepackage{array}
@@ -33,7 +33,7 @@
 \begin{document}
 
 \begin{center}
-    {\Large David Zmick}
+    {\Large David Penn Zmick}
 
     +1 832 239 7385
 
@@ -42,62 +42,60 @@
     \href{http://dpzmick.com}{dpzmick.com}
 
 \end{center}
-Areas of interest: Scientific Computing (Engineering Simulations and physical
-modeling), Systems Programming, Programming languages and compilers, social data
-mining, mathematical analysis, statistical learning, dynamical systems.\\
+% Areas of interest: Scientific computing (engineering simulations and physical
+% modeling), systems programming, programming languages and compilers, social data
+% mining, mathematical analysis, statistical learning, dynamical systems.\\
 
-Technical strength include: C and Python programming, high performance programming
-(specifically I/O), Linux systems programming.\\
+Technical strengths include: C/C++, Python, Java, Scheme, and OCaml programming, high
+performance computing systems, Linux systems programming, Decision Quality, and
+Project Management\\
 
 \section{Education}
-\begin{tabular}{x{\tbl}p{\tbr}}
-	\textsc{Present}    & B.S. in Computer Science, Minor in Mathematics, Expected Graduation: May 2016\\
-                        & University of Illinois at Urbana-Champaign\\
-                        & Current GPA: 3.72\\
+\begin{tabular}{x{\tbl}p{9cm}r}
+    \textsc{Present}    & B.S. in Computer Science, Minor in Mathematics & Graduation: May 2016\\
+                        & University of Illinois at Urbana-Champaign & GPA: 3.58\\
     \\
 \end{tabular}
 
 \section{Relevant Courses}
 \begin{tabular}{x{\tbl}p{\tbr}}
     \textsc{Mathematics}
-    & Calculus I, II, II, Applied Linear Algebra, Statistics I, Differential
+    & Calculus I, II, III, Applied Linear Algebra, Statistics I, Differential
     Equations I, II \newline \\
 
     \textsc{Computer Science}
-    & Data Structures, Computer Architecture I, Discrete Math, Theory of
-    Computation, Algorithms, Artificial Intelligence, Numerical Analysis \newline \\
+    & Discrete Mathematics, Data Structures, Theory of Computation, Algorithms,
+    Computer Architecture I, Programming Studio, Compilers and Programming Languages,
+    Artificial Intelligence, Numerical Analysis, Parallel Programming,
+    Operating System Design \newline \\
 
     \textsc{Other}
-    & Decision Analysis I, Operations Research
+    & Operations Research, Engineering Entrepreneurship
 
 \end{tabular}
 
 \section{Work Experience}
 \begin{tabular}{x{\tbl}p{\tbr}}
     \textsc{Present}
-    & \emph{Anheuser Busch Research Lab --- Twitter Analysis} \newline
-    Analyze social network data to assess the effectiveness of marketing
-    campaigns. \newline \\
-
-    \textsc{Present}
-    & \emph{CS 241 --- Systems Programming Undergraduate Course Assistant} \newline
+    & \emph{Course Assistant, CS 241: Systems Programming} \newline
     Assisting students in the class and helping to write assignments,
     documentation, and test questions. \newline \\
 
     \textsc{Summer 2014}
-    & \emph{BP High Performance Computing Development Team Intern} \newline
-    Worked to understand seismic processing workflows and the effects data
-    storage and transfer has on performance of those work flows. Used this
-    information to prototype an HDF5 container for seismic that could improve
-    I/O performance, simplify our data processing codes, and simplify workflows \newline \\
+    & \emph{Software Development Intern, BP High Performance Computing Team} \newline
+    Demonstrated the feasibility of storing and manipulating large (terabytes)
+    seismic datasets on a Linux cluster with the Hierarchical Data Format
+    (version 5).
+    \newline \\
 
     \textsc{Summer 2013}
-    & \emph{BP High Performance Computing Systems Administration Intern} \newline
-    Performed systems administration tasks for \~5500 node Linux cluster \newline
-    Initial planning for website technology migration project \newline \\
+    & \emph{Systems Administration Intern, BP High Performance Computing Team} \newline
+    Performed systems administration tasks for 5500 node Linux cluster and
+    evaluated software options for a restructuring of internal data warehousing
+    solution. \newline \\
 
     \textsc{August 2012 April 2013}
-    & \emph{NCSA SPIN Program --- Twitter Data Analytics} \newline
+    & \emph{Undergraduate Researcher, National Center for Supercomputing Applications} \newline
     Created visualizations to explore the properties of different types of
     Twitter accounts and understand how different types of information move
     through the Twitter network. \newline \\
@@ -106,82 +104,16 @@ Technical strength include: C and Python programming, high performance programmi
 
 \section{Extracurricular Activities}
 \begin{tabular}{x{\tbl}p{\tbr}}
-    \textsc{SigEducation}
-    & Chair of the local ACM chapter's special interest group for educational software \newline
-    Projects have included extensions to Khan Academy and development for an
-    existing flash card application \newline \\
+    \textsc{ACM}
+    & Chair of the local Association for Computing Machinery chapter's special
+    interest group for educational software. Projects have include extensions
+    to Khan Academy, development for an existing flash card application, and
+    development of a computer science data structure visualization tool.
+    \newline \\
 
     \textsc{Youth Ministry Assistant}
     & Volunteered as an adult assistant for church's youth group during the summers. \newline
     Taught a bible study for the youth boys discussing Christian values and their applications to modern society \newline \\
 
 \end{tabular}
-
-
-% \section{Selected Personal Projects}
-% \begin{tabular}{rp{11cm}}
-%     \textsc{WhichOne}
-%     & Decision matrix tool (\href{http://dpzmick.com/whichone}{dpzmick.com/whichone})\\
-%     & Used to evaluate a variety a set of options subject to a set of objectives\\
-%     & Technology Used: jQuery, underscore.js\\
-%     \\
-
-%     \textsc{Study Group Simulator}
-%     & Agent-Based simulation of students forming study groups\\
-%     & Attempted to answer the question: Why are study groups always too large and what can we do about it?\\
-%     & Technology Used: Haskell, Python, R\\
-%     \\
-
-%     \textsc{Ice Bucket Challenge Tracker}
-%     & Tracked the ALS Ice Bucket challenge on Instagram to build a graph of connections between participating individuals.\\
-%     & Technology Used: Python, Gephi, graphviz\\
-% \end{tabular}
-
-% \section{Technology Experience}
-% \subsection{Libraries}
-% \begin{itemize}
-%     \item HDF5 and High Performance I/O
-%     \item MPI, OpenMP, OpenACC
-%     \item CUDA (Brief Exposure)
-%     \item Matplotlib
-%     \item MongoDB
-%     \item Linux
-%     \item LAMP Stack (Moderate familiarity)
-%     \item logstash
-%     \item elasticsearch
-%     \item Hadoop (Brief exposure)
-% \end{itemize}
-
-% \subsection{Languages}
-% \begin{itemize}
-%     \item C/C++
-%     \item Python and Ruby
-%     \item Haskell
-%     \item Fortran (brief exposure)
-% \end{itemize}
-
-% \pagebreak
-
-% \section{Relevant Courses}
-% \begin{itemize}
-%     \item Data Structures
-%     \item Computer Architecture I
-%     \item Discrete Structures
-%     \item Theory of Computation
-%     \item Systems Programming
-%     \item Calculus I, II, III
-%     \item Applied Linear Algebra
-%     \item Differential Equations
-%     \item Operations Research
-% \end{itemize}
-
-% \section{Courses in Progress}
-% \begin{itemize}
-%     \item Algorithms
-%     \item Artificial Intelligence
-%     \item Numerical Analysis
-%     \item Dynamics and Differential Equations
-%     \item Decision Analysis
-% \end{itemize}
-
 \end{document}
