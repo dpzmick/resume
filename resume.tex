@@ -3,7 +3,7 @@
 % for custom \section
 \usepackage{titlesec}
 \titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{3pt}{3pt}
+\titlespacing{\section}{0pt}{2pt}{2pt}
 
 %Setup hyperref package, and colours for links
 \RequirePackage{color,graphicx}
@@ -11,8 +11,12 @@
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 
+% make the tables more compact
+\usepackage{enumitem}
+\setlist[itemize]{nolistsep, topsep=0pt, partopsep=0pt}
+
 % Use the whole page
-\usepackage[top=1in,bottom=1in,right=1in,left=1in]{geometry}
+\usepackage[top=0.8in,bottom=0.5in,right=1in,left=1in]{geometry}
 
 % no page numbers
 \pagestyle{empty}
@@ -42,97 +46,176 @@
 
 \end{center}
 
-Technical strengths include: C/C++, Python, Java, Scheme, and OCaml programming, high
-performance computing systems, Linux systems programming, Decision Quality, and
-Project Management\\
+% Technical strengths include: C/C++, Python, Java, Scheme, and OCaml programming, high
+% performance computing systems, Linux systems programming, Decision Quality, and
+% Project Management\\
 
 \section{Education}
-\begin{tabular}{x{\tbl}p{9cm}r}
-    \textsc{Present}    & B.S. in Computer Science, Minor in Mathematics & Graduation: May 2016\\
-                        & University of Illinois at Urbana-Champaign & GPA: 3.60\\
+\begin{tabular}{p{12.3cm}r}
+    B.S. in Computer Science, Minor in Mathematics & Graduation: May 2016\\
+    University of Illinois at Urbana-Champaign     & GPA: 3.60\\
     \\
 \end{tabular}
 
-\section{Relevant Courses}
-\begin{tabular}{x{\tbl}p{\tbr}}
-    \textsc{Mathematics}
-    & Calculus I, II, III, Applied Linear Algebra, Statistics I, Differential
-    Equations I, II \newline \\
+% \section{Relevant Courses}
+% \begin{tabular}{x{\tbl}p{\tbr}}
+%     \textsc{Mathematics}
+%     & Calculus I, II, III, Applied Linear Algebra, Statistics I, Differential
+%     Equations I, II \newline \\
 
-    \textsc{Computer Science}
-    & Discrete Mathematics, Data Structures, Theory of Computation, Algorithms,
-    Computer Architecture I, Programming Studio, Compilers and Programming Languages,
-    Artificial Intelligence, Numerical Analysis, Parallel Programming,
-    Operating System Design \newline \\
+%     \textsc{Computer Science}
+%     & Discrete Mathematics, Data Structures, Theory of Computation, Algorithms,
+%     Computer Architecture I, Programming Studio, Compilers and Programming Languages,
+%     Artificial Intelligence, Numerical Analysis, Parallel Programming,
+%     Operating System Design \newline \\
 
-    \textsc{Other}
-    & Operations Research, Engineering Entrepreneurship
+%     \textsc{Other}
+%     & Operations Research, Engineering Entrepreneurship
 
-\end{tabular}
+% \end{tabular}
 
 \section{Work Experience}
-\begin{tabular}{x{\tbl}p{\tbr}}
-    \textsc{Summer 2015}
-    & \emph{ExtremeBlue Technical Intern, IBM} \newline
-    Evaluate and prototype methodologies to encrypt client data stored by IBM's
-    cloud offerings for business collaboration to enable IBM to reach high value
-    customers with their products \newline \\
+\begin{tabular}{p{12.8cm}>{\raggedleft\arraybackslash}p{3cm}}
 
-    \textsc{August 2014 April 2015}
-    & \emph{Course Assistant, CS 241: Systems Programming} \newline
-    Taught discussion section and held office hours to assist students \newline \\
+    \emph{ExtremeBlue Technical Intern, IBM} & \textsc{Summer 2015} \\
 
-    \textsc{Summer 2014}
-    & \emph{Software Development Intern, BP High Performance Computing Team} \newline
-    Demonstrated the feasibility of storing and manipulating large (terabytes)
-    seismic datasets on a Linux cluster with the Hierarchical Data Format
-    (version 5).
-    \newline \\
+    \vspace{-2mm}
+    \begin{itemize}
+        \item
+            Explore at--rest data encryption for Connections (social
+            enterprise software)
+        \item
+            Understand the data security needs of IBM's cloud customers
+        \item
+            Use \textbf{NodeJS} to develop an encrypting file service for the
+            Connections cloud
+        \item
+            Notable Libraries: \textbf{Mocha}, \textbf{Q}
+    \end{itemize} \\
 
-    \textsc{Summer 2013}
-    & \emph{Systems Administration Intern, BP High Performance Computing Team} \newline
-    Performed systems administration tasks for 5500 node Linux cluster,
-    evaluated software options for internal data warehousing solution. \newline \\
+    \emph{Course Assistant, CS 241: Systems Programming} &
+    \textsc{August 2014 April 2015} \\
 
-    \textsc{August 2012 April 2013}
-    & \emph{Undergraduate Researcher, National Center for Supercomputing Applications} \newline
-    Created visualizations to explore the properties of different Twitter
-    accounts and understand how different types of information move through the
-    network. \newline \\
+    \vspace{-6mm}
+    \begin{itemize}
+        \item
+            Taught \textbf{Linux} system concepts in discussion sections
+        \item
+            Helped students with \textbf{C} programming language in office hours
+    \end{itemize} \\
 
+    \emph{Software Development Intern, BP High Performance Computing Team} &
+    \textsc{Summer 2014} \\
+
+    \vspace{-2mm}
+    \begin{itemize}
+        \item
+            Demonstrated feasibility of \textbf{HDF5} for storage of seismic
+            data
+        \item
+            Implemented a variety of \textbf{C} \textbf{MPI} programs to
+            understand performance impacts of various data storage schemes
+        \item
+            Worked with large (terabyte) datasets on a \textbf{Linux} cluster
+
+    \end{itemize} \\
+
+    \emph{Systems Administration Intern, BP High Performance Computing Team} &
+    \textsc{Summer 2013} \\
+
+    \vspace{-2mm}
+    \begin{itemize}
+        \item
+            Performed systems administration tasks for 5500 node \textbf{Linux} cluster
+        \item
+            Evaluated software options for internal data warehousing solution
+        \item
+            Deployed \textbf{Logstash} + \textbf{elasticsearch} +
+            \textbf{Kibana} system monitoring tool
+    \end{itemize} \\
+
+    \emph{Undergraduate Researcher, National Center for Supercomputing Applications} &
+    \textsc{August 2012 April 2013} \\
+
+    \vspace{-6mm}
+    \begin{itemize}
+        \item
+            Learned how different types of information move through the Twitter
+            network
+        \item
+            Created data visulizations using \textbf{Python} and \textbf{R}
+        \item
+            Other Technology: \textbf{MongoDB}, \textbf{Ruby}
+    \end{itemize}
 \end{tabular}
 
-% REMEMBER: for offline resume don't just drop links in, also keep under a page
-% need to evaluate projects and extracurricular sections for value on printed
-% resume
-\section{Notable Personal Projects}
-\begin{tabular}{x{\tbl}p{\tbr}}
-    \textsc{Ant Simulation}
-    & Simulate the movement of ants using Erlang for CS 242 final project. (\href{https://github.com/dpzmick/ants}{github})
-    \newline \\
+\section{Notable Projects}
 
-    \textsc{Study Groups}
-    & Simulate the formation of student study groups using Haskell and Python. (\href{http://dpzmick.com/2014/07/07/study-groups-pt-2/}{blog})
-    \newline \\
+\begin{tabular}{p{15.8cm}}
+    \textsc{Ant Simulation} \\
 
-    \textsc{Set Game}
-    & Implement a generalized version of the card game ``set'' in OCaml. (\href{https://github.com/dpzmick/SetGame}{github})
-    \newline \\
+    \vspace{-2mm}
+    \begin{itemize}
+        \item
+            Simulated movement of ants on a 2D grid with \textbf{Erlang}
+        \item
+            Four week final project for CS 242.
+        \item
+            \textbf{Python} and \textbf{Matplotlib} used for data visualization
+    \end{itemize} \\
 
+    \textsc{Study Groups} \\
+    \vspace{-2mm}
+    \begin{itemize}
+        \item
+            Simulated the formation of student study groups using
+            \textbf{Haskell}
+        \item
+            Used \textbf{Python} and \textbf{R} for some automation and data vis
+    \end{itemize} \\
+
+    \textsc{Set Game} \\
+    \vspace{-2mm}
+    \begin{itemize}
+        \item
+            Implement generalized version of  ``set'' card game in \textbf{OCaml}
+    \end{itemize} \\
+
+    \textsc{McPlanr} \\
+    \vspace{-2mm}
+    \begin{itemize}
+        \item
+            First place hackathon project at VandyHacks
+        \item
+            Use destinations from Google Maps and Nashville's open data project
+            to plan a day in the city
+        \item
+            Relevant Tech: \textbf{NodeJS}, \textbf{Angular}, Facebook's
+            \textbf{Flow} for Javascript
+    \end{itemize} \\
+
+    % \textsc{dvtm terminal multiplexer} \\
+    % \vspace{-2mm}
+    % \begin{itemize}
+    %     \item
+    %         Extended dvtm and \textbf{vim} to create a tighter integration
+    %         between the two
+    % \end{itemize}
 \end{tabular}
 
-\section{Extracurricular Activities}
-\begin{tabular}{x{\tbl}p{\tbr}}
-    \textsc{ACM}
-    & Chair of the local Association for Computing Machinery chapter's special
-    interest group for educational software. Projects have include extensions
-    to Khan Academy, development for an existing flash card application, and
-    development of a computer science data structure visualization tool.
-    \newline \\
+% \section{Extracurricular Activities}
+% \begin{tabular}{x{\tbl}p{\tbr}}
+%     \textsc{ACM}
+%     & Chair of the local Association for Computing Machinery chapter's special
+%     interest group for educational software. Projects have include extensions
+%     to Khan Academy, development for an existing flash card application, and
+%     development of a computer science data structure visualization tool.
+%     \newline \\
 
-    \textsc{Youth Ministry Assistant}
-    & Volunteered as an adult assistant for church's youth group during the summers. \newline
-    Taught a bible study for the youth boys discussing Christian values and their applications to modern society \newline \\
+%     \textsc{Youth Ministry Assistant}
+%     & Volunteered as an adult assistant for church's youth group during the summers. \newline
+%     Taught a bible study for the youth boys discussing Christian values and their applications to modern society \newline \\
 
-\end{tabular}
+% \end{tabular}
+
 \end{document}
